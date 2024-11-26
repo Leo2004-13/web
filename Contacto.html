@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Campestre JABY - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body class="contacto">
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <a href="inicio.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <form id="form-contacto">
+                <div class="mb-3">
+                    <label for="nombreContacto" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombreContacto" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="emailContacto" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="emailContacto" placeholder="tuemail@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+            </form>
+            <!-- Carta de confirmación -->
+            <div id="confirmacion-contacto" class="mensaje-confirmacion">
+                <p>¡Mensaje enviado exitosamente!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Restaurant Campestre JABY. Todos los derechos reservados. Ubícanos en Amarupampa, Km 33 Carretera Abancay – Lima. Teléfono: +51 929 965 242</p>
+    </footer>
+    <script src="scripts-contacto.js"></script>
+</body>
+</html>

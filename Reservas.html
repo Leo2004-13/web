@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Campestre JABY - Reservas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reservas.css">
+</head>
+<body class="reservas">
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <a href="inicio.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="reservas.html" class="active">Reservas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Sección de Reservas -->
+    <section id="reservas">
+        <div class="container">
+            <h2>Reservar Mesa</h2>
+            <form id="form-reservas">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="tuemail@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="fecha" required>
+                </div>
+                <div class="mb-3">
+                    <label for="hora" class="form-label">Hora</label>
+                    <input type="time" class="form-control" id="hora" required>
+                </div>
+                <div class="mb-3">
+                    <label for="personas" class="form-label">Número de Personas</label>
+                    <input type="number" class="form-control" id="personas" min="1" max="20" value="1" required>
+                </div>
+                <div>
+                <button type="submit" class="btn btn-primary">Reservar</button>
+                </div>
+            </form>
+            <div id="confirmacion-reservas" class="mensaje-confirmacion">
+                <p>¡Reserva generada exitosamente!</p>
+            </div> 
+        </div>
+    </section>
+    
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Restaurant Campestre JABY. Todos los derechos reservados. Ubícanos en Amarupampa, Km 33 Carretera Abancay – Lima. Teléfono: +51 929 965 242</p>
+    </footer>
+    <script src="scripts-reservas.js"></script>
+</body>
+</html>
+

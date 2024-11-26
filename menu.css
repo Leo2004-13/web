@@ -1,0 +1,87 @@
+/* Estilos específicos para la página de Menú */
+#menu h2 {
+    margin-bottom: 40px; /* Aumentamos el espacio inferior del título */
+    color: #d35400; /* Color acorde con el estilo del menú */
+}
+
+.menu-item {
+    flex: 1 1 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+    will-change: transform, box-shadow;
+}
+
+.menu-item img {
+    border-radius: 10px;
+}
+
+.menu-item h5 {
+    color: #d35400;
+    margin-top: 10px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f39c12;
+}
+
+/* Servicios (opcional si aplica en tu diseño) */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    background-color: #004060;
+}
+
+#cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animación */
+@keyframes slideUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 100%; 
+    }
+    #menu {
+        padding: 60px 0 40px 0; /* Reducimos el padding en pantallas más pequeñas */
+    
+    }
+}
